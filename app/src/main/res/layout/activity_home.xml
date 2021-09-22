@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#361300"
+    tools:context=".HomeActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="left"
+        android:fontFamily="@font/acme"
+        android:paddingTop="20dp"
+        android:textColor="@color/white"
+        android:text="Enter amount to be converted"
+        android:textSize="15sp" />
+
+    <EditText
+            android:id="@+id/currency_to_be_converted"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Amount"
+            android:textSize="10sp"
+            android:textColorHint="#6C6A6A"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+       </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/acme"
+        android:text="From"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_spinner"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/convert_from"
+                android:layout_gravity="center"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="To"
+            android:fontFamily="@font/acme"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_spinner"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/convert_to"
+                android:layout_gravity="center"
+
+                />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="162dp"
+        android:fontFamily="@font/acme"
+        android:layout_gravity="center"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_custom"
+        android:text="Convert"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/currency_converted"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColorHint="#6C6A6A"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Result"
+        />
+
+</LinearLayout>

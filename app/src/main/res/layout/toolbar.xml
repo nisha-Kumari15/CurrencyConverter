@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:id="@+id/customToolbar"
+    app:popupTheme="@style/Theme.AppCompat">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon"
+        app:civ_border_color="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/currencyConverter"
+        android:layout_height="match_parent"
+        android:text="CURRENCY CONVERTER"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:gravity="center"></TextView>
+
+</android.widget.Toolbar>
